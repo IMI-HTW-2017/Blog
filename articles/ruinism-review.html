@@ -1,49 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Notes and Waves</title>
         <meta charset="utf-8">
         <!-- Linked resources: Stylesheet, favicon -->
-        <link href="style/style.css" rel="stylesheet" type="text/css">
-        <link href="images/favicon.png" rel="icon" type="image/x-icon">
+        <link href="../style/style.css" rel="stylesheet">
+        <link href="../images/favicon.png" rel="icon" type="image/x-icon">
         <base href="../">
     </head>
     <body>
         <header>
-            <h1>Notes and Waves</h1>
-            <span>Song reviews and more...</span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">TBD</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </nav>
+            <a href="index.html">
+                <h1>Notes and Waves</h1>
+                <span>Song reviews and more...</span>
+            </a>
         </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
         <main>
             <article>
-                <h1>
+                <h2>
                     Review: Lapalux - Ruinism
-                    <span>written by: Bernhard</span>
-                    <span>1st November 2017</span>
-                </h1>
-                <img src="images/article-images/ruinism/ruinism.jpg" alt="cover art of the lapalux ruinism album showing a roped up women" title="cover art" width="50%">
-                <!-- Rest of the article (all the <p> and <img> and whatelse tags) -->
-            </article>
-        </main>
-        <aside>
-            <section>
-                <h2>Song of the week</h2>
+                    <span>written by: <a href="search/author/bernhard.html">Bernhard</a></span>
+                    <time datetime="2017-11-01">1st November 2017</time>
+                </h2>
+                <img src="images/article-images/ruinism/ruinism.jpg" alt="cover art of the lapalux ruinism album showing a roped up woman" title="cover art">
+                <p>Imagesource: "https://ninjatune.net/images/releases/ruinism-main.jpg"</p>
+                <p>
+                    British producer Stewart Howard aka Lapalux presents a different sound on his latest record.
+                    He uses elements from dubstep, industrial and even classic music. He arranges them with tender vocals, distortion and atmospheric synthesizers to create a melancholic overall sound.
+                </p>
+                <p>
+                    The album starts with a strong track, <em>Reverence</em>, is a composition of restless strings, ghostly textures and synthesizer arps that build up tension but lead to silence. After that <em>Data Demon</em>, shatters synth arpeggios and the screaming vocals of GABI, with distorted bass drums. <em>Pretty Passion</em>, follows that concept and makes more use of vocals unsettled drum pattern resolves into sounds that almost sound like old tracks by lapalux. Melancholic voices vary with glitched industrial drums. One of my favorite tracks is <em>Rotten Arp</em>, with vocals by Louisahhh and melodies that build up to a powerful drop. <em>Essex is Burning</em>, has a more positive vibe to it and makes use of a good old 303. The only track on that recod, that could be described as being close to pop music, is <em>Flickering</em>. It is calmer and far less experimental, the minimalistic 4/4 beat and calm voice of “JFDR” only get disturbed by the distorted flute loop in the background. The next to last song is my absolute favorite on this on record. <em>Phase Violet</em>, starts really calm and gets really danceable in the last minutes. 
+                </p>
+                <p>
+                    Lapalux enters new terrain and does not disappoint with his unique approach to electronic music. I think there is not a single album I have listened so much to this year. My excitement for his live show on next the Thursday in GRETCHEN club berlin is only stopped by the fact that they have a really bad sound system.
+                </p>
+                <p><strong>Rating: 9/10 Awesome</strong></p>
                 <ul>
-                    <li>Song: name</li>
-                    <li>Song: artist</li>
-                    <li><a href="#">Listen to it on YouTube!</a></li>
+                    <li><a href="https://lapalux.lnk.to/ruinism">Buy/Stream Lapalux - Ruinism</a></li>
+                    <li><a href="https://www.facebook.com/events/319008145216080/">Lapalux live show at GRETCHEN Berlin</a></li>    
                 </ul>
-            </section>
-        </aside>
+                <iframe src="https://tools.applemusic.com/embed/v1/album/1229829141?country=us" class="medium"></iframe>
+                <iframe src="https://open.spotify.com/embed?uri=spotify:album:6XFgLcLwDdxqdNlFW1Gv6o" class="medium"></iframe>
+                <p>
+                    <span>Category: <a href="search/category/reviews.html">Reviews</a></span>
+                    <span>Tags: <a href="search/tag/lapalux.html">Lapalux</a></span>
+                </p>
+            </article>
+            <aside>
+                <section>
+                    <h2>Song of the week</h2>
+                    <p>
+                        Skrillex & Damian "Jr. Gong" Marley - Make It Bun Dem
+                        <iframe src="https://tools.applemusic.com/embed/v1/song/522765492?country=de" class="applemusicsong"></iframe>
+                        <iframe src="https://open.spotify.com/embed?uri=spotify:track:0mlf3yOGzVnIVxjybDQL3h" class="spotifysong"></iframe>
+                        <a href="https://www.youtube.com/watch?v=BGpzGu9Yp6Y">Listen to it on YouTube!</a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Feedback</h2>
+                    <form action="index.html">
+                        <fieldset>
+                            <legend>Survey</legend>
+                            <label for="name">Name</label>
+                            <input type="text" name="username" id="name" maxlength="50" required>
+                            <label for="age">Age</label>
+                            <input type="number" name="userage" id="age" max="99" required>
+                            <p>How do you like our blog?</p>
+                            <input type="radio" name="radio1" id="good" value="g" checked>
+                            <label for="good">good</label>
+                            <input type="radio" name="radio1" id="okay" value="o">
+                            <label for="okay">okay</label>
+                            <input type="radio" name="radio1" id="bad" value="b">
+                            <label for="bad">bad</label>
+                            <label for="area">What should we change?</label>
+                            <textarea id="area" name="changes" rows="6" cols="55" maxlength="500"></textarea>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </fieldset>
+                    </form>
+                </section>
+            </aside>
+        </main>
         <footer>
             <ul>
-                <li>&copy; 2017 Bernhard Hoffmann and Luis Hankel</li>
+                <li>© 2017 Bernhard Hoffmann and Luis Hankel</li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </footer>

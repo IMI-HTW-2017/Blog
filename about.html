@@ -1,55 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Notes and Waves</title>
         <meta charset="utf-8">
-        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <!-- Linked resources: Stylesheet, favicon -->
+        <link href="style/style.css" rel="stylesheet">
         <link href="images/favicon.png" rel="icon" type="image/x-icon">
     </head>
     <body>
         <header>
-            <h1>Notes and Waves</h1>
-            <span>Song reviews and more...</span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">TBD</a></li>
-                    <li><a href="about.html">About us</a></li>
-                </ul>
-            </nav>
+            <a href="index.html">
+                <h1>Notes and Waves</h1>
+                <span>Song reviews and more...</span>
+            </a>
         </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
         <main>
             <article>
                 <h2>About us</h2>
-                <h3>Bernhard</h3>
-                <img src="images/berni.jpg" alt="Picture of Bernhard" width="25%">
-                <p>
-                    Hey na?
-                </p>
-                <h3>Luis</h3>
-                <img src="images/placeholder.jpg" alt="Picture of Luis">
-                <p>
-                    Velit a senserit aut dolor do nam elit ne quae. Mandaremus firmissimum do
-                    officia. Fabulas magna ab senserit relinqueret eu aute doctrina in cupidatat e
-                    quo amet senserit, eiusmod magna quem ad nulla. Quorum comprehenderit probant
-                    quorum litteris, minim in quo quorum cupidatat. Pariatur fugiat quis fabulas
-                    illum o varias ut expetendis do nulla ubi dolore te iis fugiat aliquip, pariatur
-                    tamen anim est dolor. Eu labore sempiternum.
-                </p>
+                <section>
+                    <h3>Bernhard</h3>
+                    <img src="images/berni.jpg" alt="Picture of Bernhard">
+                    <p>
+                        Hey, whats up? I'm Bernhard im interested in all things regarding electronic music, gear and culture. I love techno and Indie music and a little bit of Hip Hop and Trap if i am in the mood. I love weird and interesting sounds and good sound systems. I spend my money on concerts and music. I worked at a light and sound technician and currently i am studying internation media informatics at HTW berlin. Other things that i am interested in are visuals and design.
+                    </p>
+                </section>
+                <section>
+                    <h3>Luis</h3>
+                    <img src="images/luis.jpg" alt="Picture of Luis">
+                    <p>
+                        Hey, I'm Luis! I am one of the authors of this blog and I love music, but you probably guessed that already ;) I mostly listen to EDM genres like Tropical House or Future Bass, but there are many other genres I enjoy listening to as well, especially stuff from the 80s, e.g. Queen. I'm not what you would call a "Partylöwe" in German, but if there are any special events I wouldn't say no to going there either (like you can see, or rather read, <a href="articles/htwparty.html">in our article about the HTW party</a>). If you happen to meet me on the streets you will probably see me wearing my Beats headphones, because I like to listen to music not only at home, but also while I'm wandering around.
+                    </p>
+                </section>
             </article>
+            <aside>
+                <section>
+                    <h2>Song of the week</h2>
+                    <p>
+                        Skrillex & Damian "Jr. Gong" Marley - Make It Bun Dem
+                        <iframe src="https://tools.applemusic.com/embed/v1/song/522765492?country=de" class="applemusicsong"></iframe>
+                        <iframe src="https://open.spotify.com/embed?uri=spotify:track:0mlf3yOGzVnIVxjybDQL3h" class="spotifysong"></iframe>
+                        <a href="https://www.youtube.com/watch?v=BGpzGu9Yp6Y">Listen to it on YouTube!</a>
+                    </p>
+                </section>
+                <section>
+                    <h2>Feedback</h2>
+                    <form action="index.html">
+                        <fieldset>
+                            <legend>Survey</legend>
+                            <label for="name">Name</label>
+                            <input type="text" name="username" id="name" maxlength="50" required>
+                            <label for="age">Age</label>
+                            <input type="number" name="userage" id="age" max="99" required>
+                            <p>How do you like our blog?</p>
+                            <input type="radio" name="radio1" id="good" value="g" checked>
+                            <label for="good">good</label>
+                            <input type="radio" name="radio1" id="okay" value="o">
+                            <label for="okay">okay</label>
+                            <input type="radio" name="radio1" id="bad" value="b">
+                            <label for="bad">bad</label>
+                            <label for="area">What should we change?</label>
+                            <textarea id="area" name="changes" rows="6" cols="55" maxlength="500"></textarea>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </fieldset>
+                    </form>
+                </section>
+            </aside>
         </main>
-        <aside>
-            <section>
-                <h2>Song of the week</h2>
-                <ul>
-                    <li>Oliver Huntemann - Anonym</li>
-                    <li><a href="https://www.youtube.com/watch?v=bD5Li1eTLgQ">Listen to it on YouTube!</a></li>
-                </ul>
-            </section>
-        </aside>
         <footer>
             <ul>
-                <li>&copy; 2017 Bernhard Hoffmann and Luis Hankel</li>
+                <li>© 2017 Bernhard Hoffmann and Luis Hankel</li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </footer>

@@ -1,0 +1,449 @@
+/*********************/
+/*      General      */
+/*********************/
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background: hsl(0, 0%, 0%);
+    font-size: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    color: hsl(0, 0%, 96%);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: hsl(180, 100%, 50%);
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    font-weight: 100;
+    line-height: 5em;
+    text-shadow: 5px 5px hsl(256, 100%, 50%);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: hsl(180, 100%, 50%);
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 1em;
+    text-shadow: 2px 1px hsl(256, 100%, 50%);
+}
+
+h3 {
+    color: hsl(180, 100%, 50%);
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 2em;
+    text-shadow: 2px 1px hsl(256, 100%, 50%);
+}
+
+p {
+    line-height: 1.2em;
+    text-align: justify;
+    margin: 1.5em auto;
+    font-weight: 300;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: square;
+    font-weight: 100;
+    line-height: 1.25em;
+    margin: 0.313em 0em 0.313em 0em;
+    padding: 0em;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(330, 100%, 71%);
+    text-shadow: 2px 1px hsl(256, 100%, 50%);
+}
+
+a:hover {
+    color: hsl(330, 100%, 90%);
+    text-shadow: 2px 1px hsl(256, 100%, 60%);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+iframe.applemusicsong {
+    width: 100%;
+    height: 110px;
+    margin: 1em auto;
+    border: none;
+}
+
+iframe.spotifysong {
+    width: 100%;
+    height: 80px;
+    margin: 1em auto;
+    border: none;
+}
+
+iframe.small {
+    width: 100%;
+    height: 250px;
+    margin: 1em auto;
+    border: none;
+}
+
+iframe.medium {
+    width: 100%;
+    height: 350px;
+    margin: 1em auto;
+    border: none;
+}
+
+iframe.large {
+    width: 100%;
+    height: 500px;
+    margin: 1em auto;
+    border: none;
+}
+
+
+/********************/
+/*      Header      */
+/********************/
+
+header {
+    background: url(../images/lines.gif) no-repeat center;
+    background-size: 100% auto;
+    text-align: center;
+}
+
+header span {
+    text-transform: uppercase;
+    color: hsl(180, 100%, 50%);
+    letter-spacing: 0.75em;
+    padding: 0em 0em 1em 0em;
+    font-weight: 100;
+    font-size: 0.8em;
+    display: block;
+    text-align: center;
+}
+
+
+/********************/
+/*    Navigation    */
+/********************/
+
+nav {
+    display: block;
+    height: 3em;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0em 1.5em;
+}
+
+nav ul li a {
+    color: hsl(180, 100%, 50%);
+    font-weight: 100;
+    line-height: 3em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding: 0.7em 0.7em 0.7em 1.2em;
+    transition-duration: 0.2s;
+}
+
+nav ul li a:hover {
+    background: hsla(180, 100%, 50%, 0.25);
+    border-bottom: 0.2em solid hsl(180, 100%, 50%);
+}
+
+nav ul li a.active {
+    border-bottom: 0.2em solid hsl(180, 100%, 50%);
+}
+
+
+/********************/
+/*       Main       */
+/********************/
+
+main {
+    display: flex;
+    width: 90%;
+    max-width: 1250px;
+    margin: 1.5em auto;
+}
+
+main article {
+    flex: 2;
+    vertical-align: top;
+    text-align: center;
+}
+
+main article section {
+    margin: 2.5em 0;
+}
+
+main article section:first-child {
+    margin: 0;
+}
+
+main article h2 {
+    text-align: left;
+}
+
+main article h2 span {
+    font-size: 0.7em;
+    margin: 0em 0.5em 0em 0.5em;
+}
+
+main article h2 time {
+    font-size: 0.6em;
+    margin: 0em 0.5em 0em 0.5em;
+}
+
+main article h3 {
+    text-align: left;
+}
+
+main article h3 span {
+    font-size: 0.7em;
+    margin: 0em 0.5em 0em 0.5em;
+}
+
+main article h3 time {
+    font-size: 0.6em;
+    margin: 0em 0.5em 0em 0.5em;
+}
+
+main article img {
+    box-shadow: 0px 0px 30px -1px #EEEEEE;
+}
+
+main article ul {
+    text-align: left;
+    margin-left: 2em;
+}
+
+main section ul {
+    text-align: left;
+    margin-left: 2em;
+}
+
+main section span {
+    text-align: left;
+}
+
+
+/*********************/
+/*       Aside       */
+/*********************/
+
+aside {
+    flex: 1;
+    margin-left: 5%;
+    vertical-align: top;
+    text-align: center;
+}
+
+aside section p {
+    text-align: left;
+}
+
+aside section form {
+    text-align: left;
+}
+
+aside section form fieldset {
+    border: solid 1px;
+}
+
+aside section form label[for="name"] {
+    display: block;
+    margin: 0 0 0.5em 0;
+}
+
+aside section form label[for="age"], label[for="area"], p {
+    display: block;
+    margin: 1em 0 0.5em 0;
+}
+
+aside section form label[for="good"], label[for="okay"], label[for="bad"] {
+    margin: 0 1em 0 0;
+}
+
+aside section form textarea {
+    width: 98.5%;
+    resize: none;
+    margin: 0 auto;
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+aside section form input {
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+aside section form input[type="submit"], input[type="reset"] {
+    margin: 1em auto;
+    padding: 0.3em 0;
+    cursor: pointer;
+    width: 35%;
+    border: none;
+    border-radius: 2px;
+    background: hsl(0, 0%, 10%);
+    color: hsl(180, 100%, 50%);
+    text-shadow: 2px 1px hsl(256, 100%, 50%);
+}
+
+aside section form input[type="submit"]:hover, input[type="reset"]:hover {
+    background: hsl(0, 0%, 20%);
+}
+
+
+/********************/
+/*      Footer      */
+/********************/
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+footer ul li {
+    display: inline;
+    font-size: 0.9em;
+    line-height: 2em;
+    padding: 0 5em 0 5em;
+}
+
+
+/*********************/
+/*     Animation     */
+/*********************/
+
+@keyframes spacefade {
+    from {
+    letter-spacing: 0em;
+    opacity: 0;
+    } to {
+    letter-spacing: 1em;
+    opacity: 1;
+    }
+}
+
+h1 {
+    animation: spacefade 8s 0s cubic-bezier(0, 0, .19, .99);
+}
+
+
+/***********************/
+/*    Media Screens    */
+/***********************/
+
+@media screen and (max-device-width: 736px) {
+    main {
+        display: block;
+    }
+
+    aside {
+        width: 90%;
+    }
+
+/*General*/
+
+    h1 {
+        letter-spacing: 0.3em;
+        font-size: 4em;
+        line-height: 2em;
+    }
+    
+
+    p {
+        line-height: 0.6em;
+        text-align: justify;
+        margin: 1em auto;
+        font-weight: 300;
+    }
+    
+
+/* Header*/
+
+    header {
+        background-size: 200% auto;
+        height: 200px;
+        border-bottom: 0.4em solid hsl(180, 100%, 50%);
+    }
+
+    header span {
+        letter-spacing: 0.4em;
+        padding: 0em 0em 0em 0em;
+        font-size: 2em;
+    }  
+
+
+/* Navigation*/
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        top: inherit;
+        width:100%;
+        font-size: 170%;
+    }
+     
+    nav ul li {
+        margin: 0em 1em 0em 1em;
+    }
+    
+    nav ul li a {
+        font-weight: 400;
+        letter-spacing: 0.3em;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 0.2em solid hsl(180, 100%, 50%);
+    }
+
+    nav ul li a.active {
+        border-bottom: 0.2em solid hsl(180, 100%, 50%);
+    }
+    
+/* Main */
+    
+    main article h3 span {
+        margin: 0em 0em 0em 0em;
+    }
+
+    
+/* Animation */
+
+    @keyframes spacefade {}
